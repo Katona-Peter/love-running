@@ -23,6 +23,9 @@ header{
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 header a{
     text-decoration: none;
@@ -53,14 +56,29 @@ nav{
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /* top:100% = the top of navigation element should start at bottom of its parent.
+    0% represents the top of the parent, 100% represents the bottom of it. */
+    top:100%
+}
+#nav-toggle:checked~nav {
+    display:block;
+}
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
 }
 
 /*main*/
 main{
     background-color:lightblue;
     flex: 1 0 auto;
+    /* add a margin top of 47px to main element to push the content down,
+    otherwise it will be covered by the upper element (header) */
+    margin-top: 47px;
 }
 
 /*footer*/
