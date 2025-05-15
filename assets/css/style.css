@@ -106,5 +106,15 @@ Any CSS written between the two curly braces will only be applied at the larger 
     .nav-toggle-label{
     display:none;
     }
-
+    #logo{
+        font-size: 280%;
+        /* line height = 75 pixels to give some more space at the top */
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    main{
+    /* add a margin top to main element to push the content down,
+    otherwise it will be covered by the upper element (header) */
+    margin-top: 79px;
+}
 }
