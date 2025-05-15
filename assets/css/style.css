@@ -83,3 +83,28 @@ main{
 
 /*footer*/
 footer{background-color: orange;}
+
+/* media query: tablets and larger (768px and up)
+Any CSS written between the two curly braces will only be applied at the larger screen sizes. */
+
+@media screen and (min-width: 768px) {
+    /* want to make sure that the navbar is always displayed -> set that to block.*/
+    /* header */
+    nav {
+        display:block;
+        position:relative;
+        box-shadow: none;
+        width:fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display:flex;
+    }
+    #menu > li{
+        padding-left:1rem;
+    }
+    .nav-toggle-label{
+    display:none;
+    }
+
+}
