@@ -116,5 +116,12 @@ Any CSS written between the two curly braces will only be applied at the larger 
     /* add a margin top to main element to push the content down,
     otherwise it will be covered by the upper element (header) */
     margin-top: 79px;
+    }
+/* Large devices (laptop and desktops, 992px and up) */
 }
+
+@media screen and (min-width: 992px){
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
 }
