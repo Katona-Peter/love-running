@@ -15,6 +15,13 @@ body{
     color:#3a3a3a;
     font-family: 'lato', sans-serif;
 }
+h1, h2, h3{
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /*header*/
 header{
     background-color:#ffffff;
@@ -32,12 +39,7 @@ header a{
     color:inherit;
 }
 
-h1{
-    font-family: 'oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 #menu{
     font-size:110%;
     letter-spacing: 4px;
@@ -88,6 +90,23 @@ main{
     /* cover = automatically size itself so it covers the entire hero section 
     without distorting */
     background:url("../images/hero-image.webp") no-repeat center center/cover;
+    position:relative
+}
+
+#cover-text{
+    background-color: rgb(241, 109, 107,0.7);
+    font-size: 130%;
+    position:absolute;
+    /* bottom:30 pixels so it doesn't stick directly to the bottom of the image */
+    bottom:30px;
+    width:80%;
+    min-height:200px;
+    padding-top:40px;
+    padding-left:10px;
+}
+
+#cover-text > h2, #cover-text > h3{
+    color:#ffffff;
 }
 
 /*footer*/
@@ -137,9 +156,15 @@ Any CSS written between the two curly braces will only be applied at the larger 
     otherwise it will be covered by the upper element (header) */
     margin-top: 79px;
     }
-/* Large devices (laptop and desktops, 992px and up) */
+    
+    /* hero */
+    #cover-text{
+        width:300px;
+        right:50px;
+    }
 }
 
+/* Large devices (laptop and desktops, 992px and up) */
 @media screen and (min-width: 992px){
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
