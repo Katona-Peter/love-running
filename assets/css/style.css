@@ -73,12 +73,21 @@ nav{
 }
 
 /*main*/
-main{
-    background-color:lightblue;
+main{    
     flex: 1 0 auto;
     /* add a margin top of 47px to main element to push the content down,
     otherwise it will be covered by the upper element (header) */
     margin-top: 47px;
+}
+/* hero section */
+#hero{
+    /* give a height of 600 pixels to make sure the image has space to show up 
+    and a width of 100%, so it spans the entire width of the screen */
+    width:100%;
+    height:600px;
+    /* cover = automatically size itself so it covers the entire hero section 
+    without distorting */
+    background:url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /*footer*/
