@@ -200,6 +200,14 @@ main{
     color:#3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* media query: tablets and larger (768px and up)
 Any CSS written between the two curly braces will only be applied at the larger screen sizes. */
 
@@ -253,6 +261,10 @@ Any CSS written between the two curly braces will only be applied at the larger 
         text-align:end;
         align-self:flex-end;
     }
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Large devices (laptop and desktops, 992px and up) */
@@ -261,6 +273,14 @@ Any CSS written between the two curly braces will only be applied at the larger 
         border-bottom: 1px solid #3a3a3a;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 4;
+    }
+}
+
+    
+@media screen and (min-width: 1200px) {
     /* reasons selection */
     #benefits {
         display:flex;
