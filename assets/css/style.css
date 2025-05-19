@@ -50,7 +50,7 @@ header a{
     list-style-type: none;
 }
 #menu > li{
-    margine-bottom:1em;
+    margin-bottom:1em;
 }
 .active{
     border-bottom:1px solid #3a3a3a;
@@ -280,7 +280,7 @@ Any CSS written between the two curly braces will only be applied at the larger 
 }
 
     
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
     /* reasons selection */
     #benefits {
         display:flex;
